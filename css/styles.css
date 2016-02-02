@@ -1,0 +1,289 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html{
+  box-sizing: border-box;
+  font-family: 'bebas_neueregular';
+}
+
+p{
+  font-family: 'calibri'
+}
+
+/*End CSS reset*/
+
+header{
+  height: auto;
+  width: 100%;
+  background: url(../images/header.svg) no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#head_content{
+  position: relative;
+  padding: 4% 4% 4% 4%;
+  font-family: 'bebas_neueregular';
+}
+
+.head_left{
+  width: 50%;
+  display: inline-block;
+  padding-bottom: 10%;
+}
+
+
+.head_logo img{
+  /*padding: 4% 0px 0px 4%;*/
+  width: 100%;
+}
+.head_left_text{
+  padding-top: 4%;
+  height: auto;
+  color: #ffffff;
+  font-size: 2em;
+  font-size: 3vw;
+}
+
+.head_right{
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+  color: #ffffff;
+  padding-bottom: 10%;
+}
+
+#head_email{
+  font-size: 3vw;
+}
+
+#head_phone{
+  font-size: 5vw;
+}
+
+/*End header css*/
+
+/*Start nav css*/
+
+nav{
+  width: 100%;
+  height: auto;
+  font-family: 'bebas_neueregular';
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20%;
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li{
+  display: inline-block;
+  width: 33%;
+}
+
+#nav_top, #nav_bottom{
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  vertical-align: top;
+}
+
+#nav_top{
+  /*border-right: 2px solid black;*/
+}
+
+#nav_bottom{
+  width: 49%;
+}
+
+.nav_button{
+  height: auto;
+  padding: 4%;
+  margin: 0 auto;
+  font-size: 3vw;
+  text-align: center;
+}
+
+.nav_button:hover{
+  background-color: red;
+  color: white;
+}
+/*End nav css*/
+
+/*Start about css*/
+#about{
+  text-align: center;
+  margin-bottom: 20%;
+}
+
+#about h1{
+  font-size: 4vw;
+  margin-bottom: 5%;
+}
+
+#about p{
+  width: 60%;
+  margin: 1% auto;
+  font-size: 1.5vw;
+  font-family: calibri;
+}
+/*End about css*/
+
+/*Start Main content css*/
+
+#commercial img{
+  position: absolute;
+  height: auto;
+  width: 100%;
+  max-height: 900px;
+}
+
+#automotive img{
+  position: absolute;
+  height: auto;
+  width: 100%;
+  max-height: 900px;
+}
+
+#domestic{
+  height: 60vw;
+  width: 100%;
+}
+
+#domestic h1, #domestic li, #domestic p{
+  color: black;
+}
+
+#domestic .mcl{
+  border-left: 2px solid black;
+}
+
+/*Start generic content styling*/
+
+.main_content{
+  position: relative;
+  text-align: center;
+  padding: 1%;
+  color: white;
+  overflow: hidden;
+}
+
+.mcl, .mcr{
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+  margin: 17% 0%;
+}
+
+.mcl{
+  border-right: 2px solid white;
+}
+
+.mcl h1, .mcr h1{
+  font-size: 4vw;
+  margin-bottom: 5%;
+  padding: 0 10%;
+  text-decoration: underline;
+}
+
+.mcr li{
+  font-size: 2vw;
+  letter-spacing: .15vw;
+  line-height: 4vw;
+}
+
+.mcl p{
+  font-size: 1.8vw;
+  line-height: 2.4vw;
+  padding: 0 10%;
+  text-align: left;
+}
+
+#contact{
+  width: 100%;
+  margin-top: 30vw; /*Quick hack to fix overflow issue*/
+  height: 40vw;
+  text-align: center;
+  font-size: 6vw;
+  line-height: 7vw;
+}
+
+#contact p{
+  font-size: 1vw;
+}
+
+/*Start responsive css*/
+
+@media screen and (max-width: 480px){
+  .mcl p, .mcr p, #about p{
+    font-size: 2vw;
+  }
+
+  #about p{
+    width: 80%;
+    font-size: 10px;
+  }
+
+  .mcl p, .mcr p{
+    line-height: 3vw
+  }
+}
+
+/*End Responsive CSS*/
+
+
+
+
