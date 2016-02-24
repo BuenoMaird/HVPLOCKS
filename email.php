@@ -14,10 +14,10 @@ $password = "toptiger12";
 
 $port = "587";
 $to = "admin@hvplocks.com.au";
-$email_from = $_POST['email'];
+$email_from = $_POST['from_email'];
 $email_subject = $_POST['subject'];
-$email_body = $_POST['body'] ;
-$email_address = $_POST['email'];
+$email_body = $_POST['body'];
+$email_address = $_POST['from_email'];
 
 
 $headers = array ('From' => $email_from, 'To' => $to, 'Subject' => $email_subject, 'Reply-To' => $email_address);
@@ -28,7 +28,7 @@ $mail = $smtp->send($to, $headers, $email_body);
 if (PEAR::isError($mail)) {
 echo("<p>" . $mail->getMessage() . "</p>");
 } else {
-echo("<p>Message successfully sent!</p>");
+header("Location:sent.php");
 }
 ?>
 

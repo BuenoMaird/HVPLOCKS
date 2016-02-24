@@ -296,6 +296,20 @@ nav ul li{
   width: 90%;
   border: 5px solid black;
 }
+
+#sentContainer{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10%;
+}
+
+#sentContainer h1, p{
+  margin: 5%;
+}
+
+#sentContainer h1{
+  font-size: 3em;
 }
 
 /*Start responsive css*/
