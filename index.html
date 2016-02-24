@@ -127,15 +127,48 @@
 
 </section>
 <section id="contact">
-  <div class="mcl">
-    <h1>Contact us via:</h1>
-    <p>For more information, quotes or quick and quality service please contact us on</p>
+  <h1>Contact us</h1>
+  <div class="contactLeft">
+  <form method="POST" action="email.php">
+  <label for="from_email">Your email</label>
+  <input 
+    id="from_email"
+    name="from_email" 
+    size="64" 
+    maxlength="64" 
+    placeholder="Please enter your email"/>
+  <label for="realname">Your name</label>
+  <input 
+    id="realname"
+    name="realname" 
+    size="64" 
+    maxlength="64" 
+    placeholder="Please enter your name"/>
+  <label for="subject">Subject</label>
+  <input 
+    id="subject"
+    name="subject" 
+    size="64" 
+    maxlength="64"
+    placeholder="please enter the subject of your message"/> 
   </div>
-
-  <div class="mcr">
-    <h2>Phone: 0404 785 921</h2>
-    <h2>Email: Admin@HVPLOCKS.com.au</h2>
+  <div class="contactRight">
+  <label for="mainText">Type your message</label>
+  <textarea 
+    id="mainText"
+    name="body" 
+    rows="10" 
+    cols="60"></textarea>
+  <p>
+  <input type="submit" name="send" value="Send Your Message"/>
+  <input type="submit" name="cancel" value="Cancel - Never Mind"/>
+  </p>
+  <input 
+    type="hidden"
+    name="returnurl" 
+    value="<?php echo $escapedReturnUrl?>"/>
   </div>
+  </form>
 
 </section>
 <section></section>

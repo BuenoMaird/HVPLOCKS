@@ -242,12 +242,12 @@ nav ul li{
 .mcr li{
   font-size: 2vw;
   letter-spacing: .15vw;
-  line-height: 4vw;
+  line-height: 2em;
 }
 
 .mcl p{
-  font-size: 1.8vw;
-  line-height: 2.4vw;
+  font-size: 1.2em;
+  line-height: 1.5em;
   padding: 0 10%;
   text-align: left;
 }
@@ -265,11 +265,44 @@ nav ul li{
   font-size: 1vw;
 }
 
+.contactLeft{
+  width: 50%;
+  display: inline-block;
+  text-align: left;
+  text-align: center;
+}
+.contactRight{
+  /*width: 49%;*/
+  display: inline-block;
+  vertical-align: top;
+}
+.contactLeft p{
+  /*max-width: 200px;*/
+  text-align: center;
+}
+
+.contactLeft input{
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.contactLeft label, .contactRight label{
+  font-size: .5em;
+}
+
+.contactRight textarea{
+  min-height: 300px;
+  width: 90%;
+  border: 5px solid black;
+}
+}
+
 /*Start responsive css*/
 
 @media screen and (max-width: 480px){
   .mcl p, .mcr p, #about p{
-    font-size: 2vw;
+    /*font-size: 2vw;*/
   }
 
   #about p{
@@ -278,7 +311,7 @@ nav ul li{
   }
 
   .mcl p, .mcr p{
-    line-height: 3vw
+    line-height: 
   }
 }
 
