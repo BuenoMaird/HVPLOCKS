@@ -108,6 +108,7 @@ header{
 
 #head_phone{
   font-size: 5vw;
+  text-decoration: none;
 }
 
 /*End header css*/
@@ -184,7 +185,7 @@ nav ul li{
 
 /*Start Main content css*/
 
-#commercial img{
+#domestic img{
   position: absolute;
   height: auto;
   width: 100%;
@@ -198,16 +199,16 @@ nav ul li{
   max-height: 900px;
 }
 
-#domestic{
+#commercial{
   height: 60vw;
   width: 100%;
 }
 
-#domestic h1, #domestic li, #domestic p{
+#commercial h1, #commercial li, #commercial p{
   color: black;
 }
 
-#domestic .mcl{
+#commercial .mcl{
   border-left: 2px solid black;
 }
 
@@ -255,48 +256,68 @@ nav ul li{
 #contact{
   width: 100%;
   margin-top: 30vw; /*Quick hack to fix overflow issue*/
-  height: 40vw;
+  height: auto;
   text-align: center;
   font-size: 6vw;
-  line-height: 7vw;
+  line-height: 5vw;
 }
 
 #contact p{
   font-size: 1vw;
 }
 
-.contactLeft{
-  width: 50%;
-  display: inline-block;
-  text-align: left;
-  text-align: center;
+#contact h2{
+  font-size: 4vw;
 }
-.contactRight{
-  /*width: 49%;*/
-  display: inline-block;
-  vertical-align: top;
+
+#contact h3{
+  font-size: 3vw;
 }
-.contactLeft p{
+#contactLeft p{
   /*max-width: 200px;*/
   text-align: center;
 }
 
-.contactLeft input{
-  max-width: 200px;
+#contact input{
+  text-align: center;
   display: block;
   margin: 0 auto;
+  border: none;
+  background-color: #3e454d;
+  height: 2vw;
+  min-height: 15px;
+  color: white;
 }
 
-.contactLeft label, .contactRight label{
+#contact input:focus{
+  outline: none;
+}
+
+#contact label{
   font-size: .5em;
+  display: block;
 }
 
-.contactRight textarea{
-  min-height: 300px;
-  width: 90%;
+#contact textarea{
+  min-height: 30vw;
+  width: 60%;
   border: 5px solid black;
 }
 
+#contact .formButton{
+  width: 60%;
+  margin-top: 1vw;
+  height: 3vw;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+#contact .formButton:hover{
+  background-color: red;
+}
+
+/*CSS for sent.php*/
 #sentContainer{
   width: 50%;
   margin: 0 auto;
@@ -304,28 +325,34 @@ nav ul li{
   padding: 10%;
 }
 
-#sentContainer h1, p{
+#sentContainer h1 p{
   margin: 5%;
 }
 
 #sentContainer h1{
   font-size: 3em;
 }
+/*End CSS for sent.php*/
+
+footer{
+  height: 10vw;
+  min-height: 100px;
+  background-color: #3e454d;
+  padding: 40px 0px;
+  margin-top: 2vw;
+  color: white;
+}
 
 /*Start responsive css*/
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 680px){
   .mcl p, .mcr p, #about p{
-    /*font-size: 2vw;*/
+    font-size: 2vw;
   }
 
   #about p{
     width: 80%;
     font-size: 10px;
-  }
-
-  .mcl p, .mcr p{
-    line-height: 
   }
 }
 
