@@ -255,7 +255,7 @@ nav ul li{
 
 #contact{
   width: 100%;
-  margin-top: 30vw; /*Quick hack to fix overflow issue*/
+  margin-top: 15vw; /*Quick hack to fix overflow issue*/
   height: auto;
   text-align: center;
   font-size: 6vw;
@@ -267,13 +267,13 @@ nav ul li{
 }
 
 #contact h2{
-  font-size: 4vw;
+  font-size: 2vw;
 }
 
 #contact h3{
   font-size: 3vw;
 }
-#contactLeft p{
+#contact p{
   /*max-width: 200px;*/
   text-align: center;
 }
@@ -299,7 +299,7 @@ nav ul li{
 }
 
 #contact textarea{
-  min-height: 30vw;
+  min-height: 20vw;
   width: 60%;
   border: 5px solid black;
 }
@@ -314,7 +314,18 @@ nav ul li{
 }
 
 #contact .formButton:hover{
-  background-color: red;
+  background-color: green;
+}
+
+.contactLeft{
+  display: inline-block;
+  width: 50%;
+}
+
+.contactRight{
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
 }
 
 /*CSS for sent.php*/
@@ -336,11 +347,21 @@ nav ul li{
 
 footer{
   height: 10vw;
-  min-height: 100px;
+  min-height: 50px;
   background-color: #3e454d;
   padding: 40px 0px;
   margin-top: 2vw;
   color: white;
+  text-align: center;
+}
+
+footer a{
+  color: white;
+  padding-bottom: 10px;
+  text-decoration: underline;
+}
+footer p{
+  margin-top: 1.5vw;
 }
 
 /*Start responsive css*/
@@ -353,6 +374,15 @@ footer{
   #about p{
     width: 80%;
     font-size: 10px;
+  }
+
+  .contactLeft{
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .contactRight{
+    width: 100%;
   }
 }
 

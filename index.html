@@ -1,6 +1,6 @@
-<h1>Site coming soon please stand by</h1>
+<!-- <h1>Site coming soon please stand by</h1> -->
 
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -128,49 +128,52 @@
 <section id="contact">
   <h1>Contact us</h1>
   <h2>For emergency 24 / 7 service please call 0404 785 921</h2>
-  <form method="POST" action="email.php">
-  <label for="from_email">Your email</label>
-  <input 
-    id="from_email"
-    name="from_email" 
-    size="64" 
-    maxlength="64" 
-    placeholder="Please enter your email"/>
-  <label for="realname">Your name</label>
-  <input 
-    id="realname"
-    name="realname" 
-    size="64" 
-    maxlength="64" 
-    placeholder="Please enter your name"/>
-  <label for="subject">Subject</label>
-  <input 
-    id="subject"
-    name="subject" 
-    size="64" 
-    maxlength="64"
-    placeholder="please enter the subject of your message"/> 
-
-  <label for="mainText">Type your message</label>
-  <textarea 
-    id="mainText"
-    name="body" 
-    rows="10" 
-    cols="60"></textarea>
-  <p>
-  <input class="formButton" type="submit" name="send" value="Send Your Message"/>
-  </p>
-  <input 
-    type="hidden"
-    name="returnurl" 
-    value="<?php echo $escapedReturnUrl?>"/>
-  </div>
+  <div class="contactLeft">
+    <form method="POST" action="email.php">
+    <label for="from_email">Your email</label>
+    <input 
+      id="from_email"
+      name="from_email" 
+      size="64" 
+      maxlength="64" 
+      placeholder="Please enter your email"/>
+    <label for="realname">Your name</label>
+    <input 
+      id="realname"
+      name="realname" 
+      size="64" 
+      maxlength="64" 
+      placeholder="Please enter your name"/>
+    <label for="subject">Subject</label>
+    <input 
+      id="subject"
+      name="subject" 
+      size="64" 
+      maxlength="64"
+      placeholder="please enter the subject of your message"/> 
+    </div>
+    <div class="contactRight">
+      <label for="mainText">Type your message</label>
+      <textarea 
+        id="mainText"
+        name="body" 
+        rows="10" 
+        cols="60"></textarea>
+      <p>
+      <input class="formButton" type="submit" name="send" value="Send Your Message"/>
+      </p>
+      <input 
+        type="hidden"
+        name="returnurl" 
+        value="<?php echo $escapedReturnUrl?>"/>
+    </div>
   </form>
 
 </section>
 
 <footer>
   <div>
+    <a href="#header">Back to top</a>
     <p>ABN: 32 330 550 174 </p>
     <p>Master licence 
 000102172</p>
