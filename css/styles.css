@@ -108,7 +108,7 @@ header{
 
 #head_phone{
   font-size: 5vw;
-  text-decoration: none;
+  color: white !important; 
 }
 
 /*End header css*/
@@ -121,7 +121,6 @@ nav{
   font-family: 'bebas_neueregular';
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 20%;
 }
 
 nav a{
@@ -152,7 +151,8 @@ nav ul li{
 
 .nav_button{
   height: auto;
-  padding: 4%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   margin: 0 auto;
   font-size: 3vw;
   text-align: center;
@@ -164,28 +164,63 @@ nav ul li{
 }
 /*End nav css*/
 
+/*Start section_Header css*/
+
+#section_head{
+  height: 16vw;
+  font-size: 8vw;
+  padding-top: 8vw;
+  text-align: center;
+}
+
+/*End section_Header css*/
+
 /*Start about css*/
 #about{
-  text-align: center;
-  margin-bottom: 20%;
+  text-align: left;
 }
 
 #about h1{
   font-size: 4vw;
   margin-bottom: 5%;
+  color: white;
+}
+
+#about h1 span{
+  color: red;
 }
 
 #about p{
-  width: 60%;
   margin: 1% auto;
-  font-size: 1.5vw;
-  font-family: calibri;
+  font-size: 1.3vw;
+  font-family: calibri, helvetica;
+  color: white;
+}
+
+#about img{ 
+  height: auto;
+  width: 100%;
+  left: 0px;
+}
+
+#about_content{
+  position:absolute;
+  padding: 1%;
+  width: 50%;
+  text-align: center;
 }
 /*End about css*/
 
 /*Start Main content css*/
 
 #domestic img{
+  position: absolute;
+  height: auto;
+  width: 100%;
+  max-height: 900px;
+}
+
+#commercial img{
   position: absolute;
   height: auto;
   width: 100%;
@@ -205,14 +240,21 @@ nav ul li{
 }
 
 #commercial h1, #commercial li, #commercial p{
-  color: black;
 }
 
 #commercial .mcl{
-  border-left: 2px solid black;
+  border-left: 2px solid white;
+}
+
+#commercial .mcr{
+  border-right: none;
 }
 
 /*Start generic content styling*/
+
+#domestic .mcl, #automotive .mcl{
+  border-right: 2px solid white;
+}
 
 .main_content{
   position: relative;
@@ -227,10 +269,6 @@ nav ul li{
   vertical-align: top;
   width: 49%;
   margin: 17% 0%;
-}
-
-.mcl{
-  border-right: 2px solid white;
 }
 
 .mcl h1, .mcr h1{
@@ -287,6 +325,7 @@ nav ul li{
   height: 2vw;
   min-height: 15px;
   color: white;
+  width: 100%;
 }
 
 #contact input:focus{
@@ -366,6 +405,20 @@ footer p{
 
 /*Start responsive css*/
 
+@media screen and (max-width: 1080px){
+  
+  #nav_top, #nav_bottom{
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav_button{
+    display: block;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 680px){
   .mcl p, .mcr p, #about p{
     font-size: 2vw;
@@ -373,7 +426,8 @@ footer p{
 
   #about p{
     width: 80%;
-    font-size: 10px;
+    font-size: 1.3vw;
+    color
   }
 
   .contactLeft{
