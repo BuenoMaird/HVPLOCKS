@@ -133,21 +133,19 @@ nav ul li{
   width: 33%;
 }
 
-#nav_top, #nav_bottom{
+#nav{
   display: inline-block;
-  width: 50%;
+  width: 100%;
   text-align: center;
-  margin: 0 auto;
+  margin: 20px auto;
   vertical-align: top;
 }
 
-#nav_top{
-  /*border-right: 2px solid black;*/
+#mobile_nav{
+  display: none;
+  height: auto;
 }
 
-#nav_bottom{
-  width: 49%;
-}
 
 .nav_button{
   height: auto;
@@ -156,12 +154,23 @@ nav ul li{
   margin: 0 auto;
   font-size: 3vw;
   text-align: center;
+  display: inline-block;
+  min-width: 15%;
 }
 
 .nav_button:hover{
   background-color: red;
   color: white;
 }
+
+/* menu burger css. */
+
+.burger{
+  height: 200px;
+  width: 100%;
+  display: block;
+}
+
 /*End nav css*/
 
 /*Start section_Header css*/
@@ -231,7 +240,7 @@ nav ul li{
   position: absolute;
   height: auto;
   width: 100%;
-  max-height: 900px;
+  max-height: 800px;
 }
 
 #commercial{

@@ -1,57 +1,8 @@
 <!-- <h1>Site coming soon please stand by</h1> -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Newcastle Locksmiths</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="fonts/bebas_neue/stylesheet.css">
-  <meta name="google-site-verification" content="dTvjb_flh1ovpWP9J6K9i_8PLQ1wJYm1EbA4Yz39Q_c" />
-  <!-- <meta name="format-detection" content="telephone=no"> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>  
+<?php require'header.php'; ?>
 
-<header id="header">
-  <div id="head_content">
-
-    <div class="head_left">
-      <div class="head_logo">
-        <a href="#header"><img src="images/head_text.svg" alt=""></a>
-      </div>
-      <div class="head_left_text">
-        <h1>24/7 security solutions</h1>
-      </div>
-    </div> 
-
-    <div class="head_right">
-      <h1 id="head_email">For 24 / 7 service call</h1>
-      <h1 id="head_phone">
-        0404 785 921
-      </h1>
-    </div>
-  </div>
-</header>
-
-<nav>
-  <div id="nav_top">
-    <a href="#commercial"><div class="nav_button">
-      <h1>Commercial</h1>
-    </div></a>
-    <a href="#domestic"><div class="nav_button">
-      <h1>Domestic</h1>
-    </div></a>
-  </div>
-  <div id="nav_bottom">
-    <a href="#automotive"><div class="nav_button">
-      <h1>Automotive</h1>
-    </div></a>
-    <a href="#contact"><div class="nav_button">
-      <h1>Contact</h1>
-    </div></a>
-  </div>
-</nav>
+<?php require'nav.php' ?>
 
 <section id="about">
   <div id="about_content">
@@ -110,7 +61,6 @@
     <div class="mcl">
       <h1>Commercial</h1>
       <p>Whether it’s a pre existing building or still in construction, we can provide any security requirement you need. Our Locksmiths have full security accreditation, carry all construction certificates needed and are OHS trained.</p>
-      </p>
     </div>
   </div>
 </section>
@@ -184,14 +134,7 @@
 
 </section>
 
-<footer>
-  <div>
-    <a href="#header">Back to top</a>
-    <p>ABN: 32 330 550 174 </p>
-    <p>Master licence 
-000102172</p>
-  </div>
-</footer>
+<?php require'footer.php' ?>
   
 </body>
 </html>
